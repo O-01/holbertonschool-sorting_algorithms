@@ -5,13 +5,11 @@
  * @array: object array
  * @size: size of array
  */
-
 void quick_sort(int *array, size_t size)
 {
 	if (!array || size < 2)
 		return;
-
-	sortinho(array, 0, size - 1, size);
+	sorting(array, 0, size - 1, size);
 }
 
 /**
@@ -21,8 +19,7 @@ void quick_sort(int *array, size_t size)
  * @right: last index
  * @size: size of array
  */
-
-void sortinho(int *array, int left, int right, size_t size)
+void sorting(int *array, int left, int right, size_t size)
 {
 	int x = 0;
 
@@ -42,7 +39,6 @@ void sortinho(int *array, int left, int right, size_t size)
  * @size: size of array
  * Return: partition index
  */
-
 int partition(int *array, size_t left, size_t right, size_t size)
 {
 	size_t x = 0, y = left;
@@ -57,7 +53,6 @@ int partition(int *array, size_t left, size_t right, size_t size)
 		}
 	if (y != right)
 		swap(array, right, y), print_array(array, size);
-
 	return (y);
 }
 
@@ -67,7 +62,6 @@ int partition(int *array, size_t left, size_t right, size_t size)
  * @x: input element 1
  * @y: input element 2
  */
-
 void swap(int *array, int x, int y)
 {
 	int tmp = 0;

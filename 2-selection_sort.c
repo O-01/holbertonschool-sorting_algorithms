@@ -5,7 +5,6 @@
  * @array: object array to be sorted
  * @size: size of array
  */
-
 void selection_sort(int *array, size_t size)
 {
 	size_t swap = 0, nmin = 0, cmin = 0;
@@ -13,7 +12,6 @@ void selection_sort(int *array, size_t size)
 
 	if (!array || !size)
 		return;
-
 	for (swap = 0; swap < (size - 1); swap++)
 	{
 		nmin = swap;

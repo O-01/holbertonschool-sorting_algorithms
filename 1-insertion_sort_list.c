@@ -4,16 +4,13 @@
  * insertion_sort_list - sort doubly linked list using insertion sort algorithm
  * @list: object list
  */
-
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *this, *hold;
 
 	if (!list || !(*list) || !(*list)->next)
 		return;
-
 	for (this = *list; this; this = this->next)
-	{
 		for (; this->next && this->n > this->next->n; print_list(*list))
 		{
 			hold = this->next;
@@ -30,5 +27,4 @@ void insertion_sort_list(listint_t **list)
 			else
 				*list = hold;
 		}
-	}
 }
